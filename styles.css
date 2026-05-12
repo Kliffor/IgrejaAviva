@@ -140,6 +140,20 @@ h4{font-size:18px;font-weight:600}
 .car-btn.prev{left:-8px}
 .car-btn.next{right:-8px}
 
+/* ===== Galeria ===== */
+.gallery{position:relative}
+.gallery-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:8px 4px 24px;scrollbar-width:none}
+.gallery-track::-webkit-scrollbar{display:none}
+.photo{flex:0 0 360px;height:260px;scroll-snap-align:start;position:relative;border-radius:var(--radius-img);overflow:hidden;border:1px solid rgba(255,255,255,.06);box-shadow:var(--shadow);cursor:pointer;display:block}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;background:linear-gradient(135deg,#11175C,#070B3B)}
+.photo:hover img{transform:scale(1.06)}
+.photo-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(180deg,rgba(7,11,59,.2) 0%,rgba(7,11,59,.85) 100%);color:var(--white);font-weight:600;font-size:15px;opacity:0;transition:opacity .3s ease}
+.photo-overlay .lucide{font-size:20px;color:var(--gold)}
+.photo:hover .photo-overlay{opacity:1}
+@media(max-width:768px){
+  .photo{flex:0 0 80%;height:220px}
+}
+
 /* ===== Eventos ===== */
 .event{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-bottom:80px}
 .event.reverse{direction:rtl}
