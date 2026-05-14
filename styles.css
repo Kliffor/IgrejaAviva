@@ -217,3 +217,62 @@ h4{font-size:18px;font-weight:600}
   .hero-actions{flex-direction:column;align-items:stretch}
   .hero-actions .btn{justify-content:center}
 }
+
+@media(max-width:768px){
+  .photo{
+    flex:0 0 90%;
+    height:200px;
+  }
+}
+
+@media(max-width:768px){
+  .btn{
+    width:100%;
+    padding:16px;
+    font-size:16px;
+  }
+}
+
+.img-agenda{
+  width:100%;
+  height:auto;
+}
+
+.img-agenda img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+}
+
+.cards-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.cards-grid{grid-template-columns:repeat(3,1fr)}
+
+@media(max-width:768px){
+  .hero{
+    min-height:90vh;
+    padding-top:120px;
+  }
+
+  .hero-content{
+    text-align:center;
+  }
+
+  .lead{
+    font-size:16px;
+  }
+}
+
+@media(max-width:768px){
+  .logo-mark{
+    width:60px;
+    height:60px;
+  }
+
+  .header{
+    padding:12px 0;
+  }
+}
